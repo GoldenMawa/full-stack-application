@@ -1,13 +1,13 @@
 //  ***** Imports *****
 import express from "express";
-const express = ("express");
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import db from "./db/conn.mjs"; 
 
 // ***** Variable Declarations *****
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 5050;
+const PORT = process.env.PORT || 5173;
 
 // ***** Routes *****
 app.get ('/', (req, res) => {
