@@ -1,4 +1,5 @@
 import './App.css'
+import Browse from './pages/Browse'
 import Businesses from './pages/Businesses'
 import Organizations from './pages/Organizations'
 import ServiceProviders from './pages/ServiceProviders'
@@ -12,9 +13,9 @@ function App() {
 
   return (
     <>
-     <h1>This is my main component</h1>
      <Routes>
       <Route path="/" element={<Homepage />}/>
+      <Route path="/browse" element={<Browse />}/>
       <Route path="/listing" element={<BusinessListing />}/>
       <Route path="/businesses" element={<Businesses />}/>
       <Route path="/organizations" element={<Organizations/>}/>
