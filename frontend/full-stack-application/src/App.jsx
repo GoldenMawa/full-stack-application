@@ -1,4 +1,6 @@
 import './App.css'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 import Browse from './pages/Browse'
 import Businesses from './pages/Businesses'
 import Organizations from './pages/Organizations'
@@ -13,6 +15,8 @@ function App() {
 
   return (
     <>
+    <Nav />
+
      <Routes>
       <Route path="/" element={<Homepage />}/>
       <Route path="/browse" element={<Browse />}/>
@@ -21,7 +25,10 @@ function App() {
       <Route path="/organizations" element={<Organizations/>}/>
       <Route path="/serviceproviders" element={<ServiceProviders />}/>
      </Routes>
+
      <UserPage />
+
+     <Footer />
     </>
   )
 }
